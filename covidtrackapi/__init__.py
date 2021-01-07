@@ -15,10 +15,10 @@ from flask_socketio import SocketIO
 app = Flask(__name__)
 
 # Start the DB
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///covidtrack.db'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://yycbedgdovoumi:e2b063423494299a6328f6e497a2802342cdc1f8672f968e73c6a4b17f7946b6@ec2-54-156-149-189.compute-1.amazonaws.com:5432/d9cu2ig0fsgik1'
-# app.config['SECRET_KEY'] = 'covid19secrettrackingkey'
-app.config['SECRET_KEY'] = "b'\xcf\x1a\x16)\xca\xb5a\xc7p\r\x88\x94\xcb\x9fg\xc1'"
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///covidtrack.db'
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://yycbedgdovoumi:e2b063423494299a6328f6e497a2802342cdc1f8672f968e73c6a4b17f7946b6@ec2-54-156-149-189.compute-1.amazonaws.com:5432/d9cu2ig0fsgik1'
+app.config['SECRET_KEY'] = 'covid19secrettrackingkey'
+# app.config['SECRET_KEY'] = "b'\xcf\x1a\x16)\xca\xb5a\xc7p\r\x88\x94\xcb\x9fg\xc1'"
 # app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
